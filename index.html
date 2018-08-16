@@ -4,6 +4,8 @@
 <head>
     <title>Crystal Collector</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Orbitron" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,49 +15,46 @@
 <body>
 
     <div class="content-container">
-        <div>
-            <h1>Crystal Collector</h1>
+        <div class="game-elements" id="game-title-div">
+            <h1 id="game-title">Crystal Collector</h1>
         </div>
 
-        <div>
-            <p class="game-description"></p>
-            <p class="game-description"></p>
-            <p class="game-description"></p>
+        <div class="game-elements" id="game-desc-div">
+            <p class="game-description">You will be given a random number at the start of the game. Your score will start at zero. It is your objective to make your score match the given number without going over.</p>
+            <p class="game-description" id="paragraph-two">When the game starts the four crystals below will be given different values assigned at random. Clicking the crystals will add points to your score. Only by clicking the crystals will you be able to ascertain what value they will add to your score.</p>
+            <p class="game-description" id="paragraph-three">If you match the number you win. If you go over you lose. When you win or lose the game will reset. When the game resets the random number will change, and so will the values of each crystal.</p>
         </div>
 
-        <div>
+        <div class="game-elements" id="random-numb-div">
             <h2 id="random-number"></h2>
         </div>
 
-        <div>
-            <h5>Wins: <span id="wins"></span> </h5>
-            <h5>Losses: <span id="losses"></span> </h5>
+        <div class="game-elements" id="wins-losses-div">
+            <h5 id="wins-text">Wins: <span id="wins"></span> </h5>
+            <h5 id="losses-text">Losses: <span id="losses"></span> </h5>
         </div>
 
-        <div>
-            <button id="crystal-one" class="crystal"></button>
-        </div>
-        <div>
-            <button id="crystal-two" class="crystal"></button>
-        </div>
-        <div>
-            <button id="crystal-three" class="crystal"></button>
-        </div>
-        <div>
-            <button id="crystal-four" class="crystal"></button>
+        <div class="game-elements" id="buttons-div">
+            <button id="crystal-one" class="crystal"><img src="assets/images/crystal1.png" alt="crystal one" class="crystal-picture"></button>
+        
+            <button id="crystal-two" class="crystal"><img src="assets/images/crystal2.png" alt="crystal two" class="crystal-picture"></button>
+        
+            <button id="crystal-three" class="crystal"><img src="assets/images/crystal3.png" alt="crystal three" class="crystal-picture"></button>
+        
+            <button id="crystal-four" class="crystal"><img src="assets/images/crystal4.png" alt="crystal four" class="crystal-picture"></button>
         </div>
 
-        <div>
-            <p>Your total score is: </p>
+        <div class="game-elements" id="total-score-text-div">
+            <p id="total-score-text">Your total score is: </p>
         </div>
 
-        <div>
+        <div class="game-elements" id="total-score-div">
             <h2 id="total-score"></h2>
         </div>
 
-        <div>
+        <!-- <div class="game-elements">
             <h2 id="player-number"></h2>
-        </div>
+        </div> -->
     </div>
 
 
