@@ -40,12 +40,10 @@ var checkForWin = function() {
     if (randomNumber === score) {
         wins++;
         gameStart();
-        console.log(buttonValue);
     }
     if (randomNumber < score) {
         losses++;
         gameStart();
-        console.log(buttonValue);
     }
 }
 
@@ -53,14 +51,12 @@ var checkForWin = function() {
 
 $(document).ready(function() {
     gameStart();
-    console.log(buttonValue);
 
     $('.crystal').click(function() {
         var crystalValue = parseInt($(this).val());
         score = score + crystalValue;
         $('#total-score').text(score);
         checkForWin();
-        console.log(score);
     });
 });
 
