@@ -9,3 +9,5 @@ When the game starts the four crystals below will be given different values assi
 If you match the number you win. If you go over you lose. When you win or lose the game will reset. When the game resets the random number will change, and so will the values of each crystal.
 
 Simple JavaScript game with mobile-responsive CSS. 
+
+https://alexanderjones19.github.io/unit-4-game/
